@@ -46,7 +46,7 @@ Veuillez vous référer à la documentation officiel en fonction de votre OS :
 ***
 # Étape 2 : Compilation de l'image
 
-Tout d'abord, il faut récupérer le fichier **`Dockerfile`** ici.
+Tout d'abord, il faut récupérer le fichier **`Dockerfile`** [ici](https://github.com/WrongJuice/dockerfile_debian-panga/archive/master.zip).
 Ensuite, il faut ouvrir un terminal et se placer à dans le répertoire où le fichier est stocké (le fichier ne doit pas être renommé et doit impérativement s'appeler `Dockerfile`, il est recommandé de placer ce fichier dans un répertoire vide).
 
 Enfin, il faut exécuter la commande suivante :
@@ -65,6 +65,8 @@ où `{chemin du répertoire partagé}` sera un répertoire partagé entre votre 
 **Ne fermez pas/quittez pas le conteneur pour la prochaine étape.**
 
 # Étape 3 : Finalisation de l'installation (**impératif**)
+
+Il faut tout d'abord récupérer toutes les ressources [ici](https://github.com/WrongJuice/ressources_debian-panga).
 
 Placez le fichier `Panga.zip` et `install.sh` dans le dossier `{chemin du répertoire partagé}`.
 Puis dans le terminal associé au conteneur lancé dans l'étape précédente, exécutez la commande suivante :
