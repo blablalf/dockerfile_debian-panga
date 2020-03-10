@@ -71,7 +71,7 @@ Il faut tout d'abord récupérer toutes les ressources [ici](https://github.com/
 Placez le fichier `Panga.zip` et `install.sh` dans le dossier `{chemin du répertoire partagé}`.
 Puis dans le terminal associé au conteneur lancé dans l'étape précédente, exécutez la commande suivante :
 
-`/home/install`
+`/home/install.sh`
 
 Cela va compiler les librairies nécessaires pour l'existant, traiter les ressources du fichier _.zip_ et effectuer quelques ajustements.
 
