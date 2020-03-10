@@ -60,6 +60,18 @@ RUN curl -OL https://github.com/protocolbuffers/protobuf/releases/download/v3.7.
 RUN unzip -o protoc-3.7.0-linux-x86_64.zip -d /usr/local bin/protoc
 RUN unzip -o protoc-3.7.0-linux-x86_64.zip -d /usr/local 'include/*'
 RUN rm -f protoc-3.7.0-linux-x86_64.zip
+RUN wget -O /home/protobuf-all-3.7.0.zip https://github.com/protocolbuffers/protobuf/releases/download/v3.7.0/protobuf-cpp-3.7.0.zip
+RUN unzip /home/protobuf-all-3.7.0.zip -d /home/
+RUN rm /home/protobuf-all-3.7.0.zip
+RUN chmod +x /home/protobuf-3.7.0/configure
+RUN chmod +x /home/protobuf-3.7.0/autogen.sh
+RUN cd /home/protobuf-3.7.0 && ./autogen.sh
+RUN cd /home/protobuf-3.7.0 && ./configure
+RUN make -C /home/protobuf-3.7.0
+RUN make -C /home/protobuf-3.7.0 check
+RUN make -C /home/protobuf-3.7.0 install
+RUN ldconfig
+RUN rm -dr /home/protobuf-3.7.0
 RUN apt-get autoremove -y
 
 #Pour lancer l'image faire : docker run -v '{chemin des projets sur votre machine}:/home/' -it --name panga debian-panga
