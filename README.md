@@ -10,6 +10,8 @@ Sommaire :
 2. [Gérer le conteneur](https://github.com/WrongJuice/dockerfile_debian-panga/wiki/G%C3%A9rer-le-conteneur)
 3. [Commandes docker utiles](https://github.com/WrongJuice/dockerfile_debian-panga/wiki/Commandes-docker-utiles)
 4. [Compiler du code Qt, et l'exécuter](https://github.com/WrongJuice/dockerfile_debian-panga/wiki/Compiler-du-code-Qt,-et-l'ex%C3%A9cuter)
+5. [Lancer l'existant](https://github.com/WrongJuice/dockerfile_debian-panga/wiki/Lancer-l'existant)
+6. [Formatter le code](https://github.com/WrongJuice/dockerfile_debian-panga/wiki/Formatter-le-code)
 
 ***
 
