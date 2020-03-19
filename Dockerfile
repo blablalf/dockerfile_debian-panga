@@ -16,6 +16,7 @@ RUN apt-get install -y unzip
 RUN apt-get install -y zsh
 RUN apt-get install -y wget
 RUN apt-get install -y git
+RUN apt-get install -y man
 RUN chsh -s $(which zsh)
 RUN yes | sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 RUN wget -O ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
