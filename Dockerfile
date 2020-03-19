@@ -35,11 +35,12 @@ RUN apt-get install imagemagick -y
 RUN apt-get install libmagick++-dev -y
 RUN apt-get install magick++-dev -y
 
-#Commande à lancer -> installation des librairies pour qt
+#Commande à lancer -> installation des soft pour qt
 RUN apt-get install build-essential -y
 RUN apt-get install qtcreator -y
 RUN apt-get install qt5-default -y
 RUN apt-get install qt5-doc qtbase5-examples qtbase5-doc-html -y
+RUN apt-get install clang-format -y
 
 #Commande à lancer -> installation du dépôt de Panga
 RUN echo "deb http://deb.panga.fr/buster panga-common-staging main" >> /etc/apt/sources.list
