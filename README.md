@@ -171,3 +171,8 @@ Après la compilation, un fichier du nom du projet est généré, il suffit alor
 Notez que vous pouvez toujours rendre ce fichier exécutable avec :
 
 `chmod +x nomDuFichierGénéré`
+
+***
+# **LANCEMENT DE L'EXISTANT**
+Pour lancer l'existant compilé, il vous suffit d'exécuter le script :
+lancez `/home/runExistant.sh`, si cela ne fonctionne pas vous pouvez vous déplacer dans `/home/` et exécuter le script en faisant : `./runExistant.sh`.
