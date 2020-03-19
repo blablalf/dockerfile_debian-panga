@@ -176,3 +176,21 @@ Notez que vous pouvez toujours rendre ce fichier exécutable avec :
 # **LANCEMENT DE L'EXISTANT**
 Pour lancer l'existant compilé, il vous suffit d'exécuter le script :
 lancez `/home/runExistant.sh`, si cela ne fonctionne pas vous pouvez vous déplacer dans `/home/` et exécuter le script en faisant : `./runExistant.sh`.
+
+
+***
+# **FORMATTER LE CODE**
+
+## Indenter automatiquement le code selon les bons standarts, c'est possible :
+
+Si vous souhaitez formatter le code selon les bons standarts, il vous suffit de vous déplacer dans le répertoire contenant par exemple vos fichiers .cpp et de lancer la commande suivante :
+`clang-format -i -style=file /home/style.clang-format *.cpp`
+
+Pour les fichiers .h :
+`clang-format -i -style=file /home/style.clang-format *.h`
+
+Enfin il vous est possible de formatter des fichiers un à un :
+`clang-format -i -style=file /home/style.clang-format leFichierAFormatter`
+
+Note : il est possible de formatter d'autres type de fichiers.
+Note 2 : il est possible d'installer l'extension de formattage sur la plupart de vos éditeurs de textes. Vous n'êtes donc pas obligé de passer par cette commande si vous ne le souhaitez pas.
