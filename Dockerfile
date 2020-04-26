@@ -75,6 +75,7 @@ RUN make -C /home/protobuf-3.7.0 install
 RUN ldconfig
 RUN rm -dr /home/protobuf-3.7.0
 RUN apt-get autoremove -y
+RUN export LC_ALL=C
 
 #Pour lancer l'image faire : docker run -v '{chemin des projets sur votre machine}:/home/' -it --name panga debian-panga
 #Exemple : docker run -v '/Users/alfred/Documents/DUT/PTS3/Panga/:/home/' -it --name panga debian-panga
